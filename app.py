@@ -30,9 +30,9 @@ MAX_HISTORY = 100  # 取得歷史訊息時的最大筆數（避免一次查太�
 
 # === MongoDB 連線設定（可用環境變數覆蓋） ===
 # - 本地開發預設連到本機 MongoDB。上雲（Atlas）時請在環境變數設定 MONGO_URI（mongodb+srv://...）
-MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
+#MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017")
 
-#MONGO_URI = os.getenv("MONGO_URI")  # 改用使用自己mongodb atlas的網址  ex: mongodb://appuser:StrongPassword!@mongo-xxxx:27017/chatapp?authSource=chatapp
+MONGO_URI = os.getenv("MONGO_URI")  # 改用使用自己mongodb atlas的網址  ex: mongodb://appuser:StrongPassword!@mongo-xxxx:27017/chatapp?authSource=chatapp
 
 
 DB_NAME = os.getenv("MONGO_DB", "chatapp")           # 資料庫名稱
